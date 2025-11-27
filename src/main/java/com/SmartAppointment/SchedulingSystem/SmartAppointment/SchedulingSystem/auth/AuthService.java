@@ -1,5 +1,6 @@
 package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.auth;
 
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.Role;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.UserEntity;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.UserRepository;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AuthResponse;
@@ -25,7 +26,7 @@ public class AuthService {
         UserEntity user = UserEntity.builder()
                 .username(request.getUsername())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(request.getRole())
+                .role(Role.USER)
                 .build();
 
         userRepository.save(user);

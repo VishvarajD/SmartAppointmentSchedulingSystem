@@ -18,7 +18,7 @@ public class ProviderModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int provider_id;
     @OneToOne
-    @JoinColumn(name = "id", nullable = false, unique = true)
+    @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false, unique = true)
     private UserEntity user;
 
     @Column(nullable = false)

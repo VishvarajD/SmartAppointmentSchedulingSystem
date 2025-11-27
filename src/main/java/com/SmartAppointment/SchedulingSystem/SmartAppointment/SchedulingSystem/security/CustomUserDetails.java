@@ -2,7 +2,6 @@ package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.Role;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.UserEntity;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,7 +17,12 @@ private UserEntity user;
     }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        String roleName = "ROLE_" + user.getRole();
+
+        if (user.getRole() == null) {
+            return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        }
+
+        String roleName = "ROLE_" + user.getRole().name();
         return List.of(new SimpleGrantedAuthority(roleName));
     }
 
@@ -26,8 +30,8 @@ private UserEntity user;
         return user.getId();
     }
 
-    public String getRole() {
-        return user.getRole().name();
+    public Role getRole() {
+        return user.getRole();
     }
 
     @Override
