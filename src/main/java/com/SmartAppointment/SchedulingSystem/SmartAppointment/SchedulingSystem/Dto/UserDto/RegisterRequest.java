@@ -1,4 +1,4 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto;
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.Role;
 import lombok.Data;

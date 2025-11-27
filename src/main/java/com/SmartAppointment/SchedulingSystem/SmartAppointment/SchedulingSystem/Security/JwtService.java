@@ -1,4 +1,4 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.security;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Security;
 
 import io.jsonwebtoken.*;
 

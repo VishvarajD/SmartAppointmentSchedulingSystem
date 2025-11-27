@@ -2,7 +2,7 @@ package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.UserEntity;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.UserRepository;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AdminRequestDto;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.AdminDto.AdminRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

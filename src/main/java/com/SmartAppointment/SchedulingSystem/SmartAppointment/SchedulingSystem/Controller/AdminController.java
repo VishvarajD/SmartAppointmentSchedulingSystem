@@ -1,7 +1,7 @@
 package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Controller;
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Service.AdminService;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AdminRequestDto;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.AdminDto.AdminRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;

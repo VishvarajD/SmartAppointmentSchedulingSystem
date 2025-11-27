@@ -1,5 +1,7 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.security;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Config;
 
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Security.CustomUserDetailsService;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Security.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +17,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.stereotype.Controller;
 
 @Configuration
 @EnableWebSecurity

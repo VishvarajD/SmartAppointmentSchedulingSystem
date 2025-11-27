@@ -2,7 +2,7 @@ package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.AppointmentEntity;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Service.AppointmentService;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AppointmentRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.AppointmentDto.AppointmentRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

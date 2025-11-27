@@ -1,4 +1,4 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.security;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Security;
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.UserEntity;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.UserRepository;

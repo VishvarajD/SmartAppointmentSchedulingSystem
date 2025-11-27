@@ -1,9 +1,9 @@
 package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Controller;
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.auth.AuthService;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AuthResponse;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.LoginRequest;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.RegisterRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.AuthResponse;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.LoginRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

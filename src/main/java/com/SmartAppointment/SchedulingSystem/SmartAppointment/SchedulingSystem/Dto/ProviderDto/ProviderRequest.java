@@ -1,4 +1,4 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.ProviderDto;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.ProviderDto;
 
 import lombok.Data;
 

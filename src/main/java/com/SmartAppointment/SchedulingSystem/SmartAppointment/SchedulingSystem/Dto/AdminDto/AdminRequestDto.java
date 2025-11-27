@@ -1,4 +1,4 @@
-package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto;
+package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.AdminDto;
 
 
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.Role;

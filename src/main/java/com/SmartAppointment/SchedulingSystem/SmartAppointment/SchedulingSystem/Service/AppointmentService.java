@@ -7,7 +7,7 @@ import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.M
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.AppointmentRepository;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.ProviderRepository;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.UserRepository;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AppointmentRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.AppointmentDto.AppointmentRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

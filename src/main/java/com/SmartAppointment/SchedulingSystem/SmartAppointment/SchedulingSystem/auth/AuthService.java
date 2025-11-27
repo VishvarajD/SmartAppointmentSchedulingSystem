@@ -3,11 +3,11 @@ package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.Role;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Model.UserEntity;
 import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Repository.UserRepository;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.AuthResponse;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.LoginRequest;
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.dto.RegisterRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.AuthResponse;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.LoginRequest;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Dto.UserDto.RegisterRequest;
 
-import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.security.JwtService;
+import com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.Security.JwtService;
 
 import lombok.RequiredArgsConstructor;
 
