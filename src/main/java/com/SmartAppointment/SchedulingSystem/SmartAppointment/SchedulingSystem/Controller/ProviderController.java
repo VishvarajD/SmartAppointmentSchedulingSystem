@@ -23,6 +23,7 @@ public class ProviderController {
     }
 
     @GetMapping("/get")
+    @PreAuthorize("hasRole('ADMIN')")
     public List<ProviderModel> getProviders(){
         return providerService.getAllProviders();
     }

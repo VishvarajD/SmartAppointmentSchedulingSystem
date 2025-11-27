@@ -68,4 +68,7 @@ public class AppointmentService {
         return appointmentRepository.findByProvider(provider);
     }
 
+    public List<AppointmentEntity> getAllAppointments() {
+        return appointmentRepository.findAll();
+    }
 }

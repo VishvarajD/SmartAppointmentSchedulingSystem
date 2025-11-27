@@ -35,5 +35,11 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getProviderAppointments());
     }
 
+    @GetMapping("all")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<List<AppointmentEntity>> allAppointments() {
+        return ResponseEntity.ok(appointmentService.getAllAppointments());
+    }
+
 }
 
