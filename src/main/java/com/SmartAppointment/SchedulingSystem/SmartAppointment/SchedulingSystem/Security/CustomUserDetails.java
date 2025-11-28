@@ -26,6 +26,7 @@ private UserEntity user;
         return List.of(new SimpleGrantedAuthority(roleName));
     }
 
+
     public int getId() {
         return user.getId();
     }

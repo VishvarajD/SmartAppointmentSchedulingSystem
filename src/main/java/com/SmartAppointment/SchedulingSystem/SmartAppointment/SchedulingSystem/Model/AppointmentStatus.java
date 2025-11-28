@@ -2,7 +2,8 @@ package com.SmartAppointment.SchedulingSystem.SmartAppointment.SchedulingSystem.
 
 public enum AppointmentStatus {
     PENDING,
-    CONFIRMED,
+    APPROVED,
+    REJECTED,
     CANCELLED,
     COMPLETED
 

@@ -13,4 +13,5 @@ public interface ProviderRepository extends JpaRepository<ProviderModel, Integer
 
     Optional<ProviderModel> findByUser(UserEntity user);
 
+    Optional<ProviderModel> findByUser_Username(String username);
 }

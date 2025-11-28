@@ -41,5 +41,30 @@ public class AppointmentController {
         return ResponseEntity.ok(appointmentService.getAllAppointments());
     }
 
+    @PutMapping("/approve/{id}")
+    @PreAuthorize("hasRole('PROVIDER')")
+    public AppointmentEntity approve(@PathVariable int id) {
+        return appointmentService.approveAppointment(id);
+    }
+
+    @PutMapping("/reject/{id}")
+    @PreAuthorize("hasRole('PROVIDER')")
+    public AppointmentEntity reject(@PathVariable int id) {
+        return appointmentService.rejectAppointment(id);
+    }
+
+    @PutMapping("/cancel/{id}")
+    @PreAuthorize("hasRole('USER')")
+    public AppointmentEntity cancel(@PathVariable int id) {
+        return appointmentService.cancelAppointment(id);
+    }
+
+    @PutMapping("/complete/{id}")
+    @PreAuthorize("hasRole('PROVIDER')")
+    public AppointmentEntity complete(@PathVariable int id) {
+        return appointmentService.completeAppointment(id);
+    }
+
+
 }
 

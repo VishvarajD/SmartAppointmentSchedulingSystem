@@ -37,6 +37,7 @@ public class AppointmentService {
                 .patient(patient)
                 .provider(provider)
                 .appointmentTime(request.getAppointmentTime())
+
                 .status(AppointmentStatus.PENDING)
                 .build();
 
@@ -71,4 +72,37 @@ public class AppointmentService {
     public List<AppointmentEntity> getAllAppointments() {
         return appointmentRepository.findAll();
     }
+
+    public AppointmentEntity approveAppointment(int id) {
+        AppointmentEntity appt = appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Appointment not found"));
+
+        appt.setStatus(AppointmentStatus.APPROVED);
+        return appointmentRepository.save(appt);
+    }
+
+    public AppointmentEntity rejectAppointment(int id) {
+        AppointmentEntity appt = appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Appointment not found"));
+
+        appt.setStatus(AppointmentStatus.REJECTED);
+        return appointmentRepository.save(appt);
+    }
+
+    public AppointmentEntity cancelAppointment(int id) {
+        AppointmentEntity appt = appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Appointment not found"));
+
+        appt.setStatus(AppointmentStatus.CANCELLED);
+        return appointmentRepository.save(appt);
+    }
+
+    public AppointmentEntity completeAppointment(int id) {
+        AppointmentEntity appt = appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Appointment not found"));
+
+        appt.setStatus(AppointmentStatus.COMPLETED);
+        return appointmentRepository.save(appt);
+    }
+
 }
